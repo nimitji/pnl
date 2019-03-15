@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="home.master.cs" Inherits="home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 19%;
+            float: right;
+            height: 35px;
+            border: 1px solid #FFFFFF;
+            margin-left: 128px;
+        }
+        .auto-style3 {
+            height: 31px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 26px; font-family: 'Arial Black'; font-size: medium; font-weight: 100; font-style: normal; color: #FFFFFF; background-color: #0066CC; right: 0px; vertical-align: middle; text-align: center;">
+        <asp:Label ID="Label1" runat="server" Text="Welcome to P'N'L Accounting WebSite"></asp:Label>
+        
+
+    </div>
+        <div style="height: 44px; font-family: 'Arial Black'; font-size: medium; font-weight: 100; font-style: normal; color: #FFFFFF; background-color: #0066CC; right: 0px; vertical-align: middle; text-align: center;">
+      
+        
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3">
+                        <asp:LinkButton ID="lnlSignUp" runat="server" ForeColor="#CCFFFF" OnClick="lnlSignUp_Click">Signup</asp:LinkButton>
+&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:LinkButton ID="lnkLogin" runat="server" ForeColor="#CCFFFF" OnClick="lnkLogin_Click">Login</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
+      
+        
+
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <div style="height: 26px; font-family: 'Arial Black'; font-size: medium; font-weight: 100; font-style: normal; color: #FFFFFF; background-color: #0066CC; right: 0px; vertical-align: middle; text-align: center;">
+        Designed and Developed by Nimit Jain
+        
+
+    </div>
+    </form>
+</body>
+</html>

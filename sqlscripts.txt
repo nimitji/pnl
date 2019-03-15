@@ -1,0 +1,1 @@
+create table company(Name varchar(30) unique,MailingAddress varchar(100) not null,Country varchar (50) not null,State varchar(50)not null,Pin bigint not null,Phone bigint ,Mobile bigint not null,Fax bigint not null,EmailId varchar(50) not null,Website varchar(50) Not null,currencySymbol varchar (10),CompanyId bigint primary key,password varchar(10));  

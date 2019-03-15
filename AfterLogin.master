@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AfterLogin.master.cs" Inherits="AfterLogin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 36px;
+        }
+        .auto-style2 {
+            width: 142px;
+            height: 39px;
+        }
+        .auto-style4 {
+            width: 37%;
+            height: 21px;
+            margin-left: 0px;
+        }
+        .auto-style5 {
+            height: 38px;
+        }
+        .auto-style6 {
+            height: 38px;
+            width: 285px;
+        }
+        .auto-style7 {
+            height: 39px;
+        }
+        .auto-style9 {
+            height: 38px;
+            width: 99px;
+        }
+        .auto-style10 {
+            width: 162px;
+            height: 39px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 26px; font-family: 'Arial Black'; font-size: medium; font-weight: 100; font-style: normal; color: #FFFFFF; background-color: #0066CC; right: 0px; vertical-align: middle; text-align: center;">
+        <asp:Label ID="Label1" runat="server" Text="Welcome to P'N'L Accounting WebSite"></asp:Label>
+        
+
+    </div>
+        <div style="height: 145px; font-family: 'Arial Black'; font-size: medium; font-weight: 100; font-style: normal; color: #FFFFFF; background-color: #0066CC; right: 0px; vertical-align: middle; text-align: center; width: 1501px;">
+      
+        
+
+            <center>
+            <table class="auto-style4">
+                <tr>
+                    <td class="auto-style6">
+                        <asp:Label ID="LblNoc" runat="server" Text="Name of company"></asp:Label>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:Label ID="lblCname" runat="server"></asp:Label>
+                    </td>
+                    <td class="auto-style9">
+                        <asp:LinkButton ID="lnklogout" runat="server" OnClick="lnklogout_Click1" ForeColor="#CCFFFF">Logout</asp:LinkButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">
+                        <asp:Label ID="LblNoc0" runat="server" Text="Company ID"></asp:Label>
+                    </td>
+                    <td class="auto-style5" colspan="2">
+                        <asp:Label ID="lblCid" runat="server"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+      
+        
+
+            <table class="auto-style1" style="border-style: dashed">
+                <tr>
+                    <td class="auto-style2">
+                        <asp:LinkButton ID="lnkAddParty" runat="server" ForeColor="#CCFFFF" OnClick="LinkButton1_Click">Add party</asp:LinkButton>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:LinkButton ID="lnkBank" runat="server" ForeColor="#CCFFFF" OnClick="lnkBank_Click">Bank</asp:LinkButton>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:LinkButton ID="lnkCustomerInfo" runat="server" ForeColor="#CCFFFF" OnClick="lnkCustomerInfo_Click">Customer Info</asp:LinkButton>
+                    </td>
+                    <td class="auto-style7" style="border-width: thin; border-style: solid">
+                        <asp:LinkButton ID="lnkPayment" runat="server" ForeColor="#CCFFFF" OnClick="lnkPayment_Click">Payment</asp:LinkButton>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:LinkButton ID="lnkPurchase" runat="server" ForeColor="#CCFFFF" OnClick="lnkPurchase_Click">Purchase</asp:LinkButton>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:LinkButton ID="lnkReciepts" runat="server" ForeColor="#CCFFFF" OnClick="lnkReciepts_Click">Reciepts</asp:LinkButton>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:LinkButton ID="lnkSales" runat="server" ForeColor="#CCFFFF" OnClick="lnkSales_Click">Sales</asp:LinkButton>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:LinkButton ID="lnkSalesReport" runat="server" ForeColor="#CCFFFF" OnClick="lnkSalesReport_Click">Sales Report</asp:LinkButton>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:LinkButton ID="lnkStockreport" runat="server" ForeColor="#CCFFFF" OnClick="lnkStockreport_Click">Stock Report</asp:LinkButton>
+                    </td>
+                    <td class="auto-style10">
+                        <asp:LinkButton ID="lnkSupplierInfo" runat="server" ForeColor="#CCFFFF" OnClick="lnkSupplierInfo_Click">Supplier Info</asp:LinkButton>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:LinkButton ID="lnkVoucher" runat="server" ForeColor="#CCFFFF" OnClick="lnkVoucher_Click">Vouchers </asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
+      
+        
+      </center>
+        
+
+
+
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+    <div style="height: 30px; font-family: 'Arial Black'; font-size: medium; font-weight: 100; font-style: normal; color: #FFFFFF; background-color: #0066CC; right: 0px; vertical-align: middle; text-align: center;">
+        Designed and Developed by Nimit Jain
+        
+
+    </div>
+    </body>
+</html>
+
